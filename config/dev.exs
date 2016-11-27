@@ -39,5 +39,5 @@ config :rumbl, Rumbl.Repo,
   username: "postgres",
   password: "postgres",
   database: "rumbl_dev",
-  hostname: "localhost",
+  hostname: "db",
   pool_size: 10

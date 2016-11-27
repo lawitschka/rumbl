@@ -1,0 +1,11 @@
+db:
+  image: postgres:9.6
+
+web:
+  build: .
+  links:
+    - db
+  volumes:
+    - .:/usr/src/app
+  ports:
+    - 4000:4000
